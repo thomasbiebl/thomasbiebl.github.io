@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thomas Biebl - Persönliche Webseite mit beruflichem Hintergrund, Hobbys und Kontaktinformationen">
+    <meta name="keywords" content="Thomas Biebl, Portfolio, Beruflich, Hobbys, Kontakt">
+    <meta name="author" content="Thomas Biebl">
+    <title>Thomas Biebl - Persönliche Webseite</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/logo.svg" alt="Thomas Biebl Logo" class="logo">
+                <span class="nav-brand">Thomas Biebl</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">Über mich</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#professional" class="nav-link">Beruflich</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#hobbies" class="nav-link">Hobbys</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Kontakt</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hallo, ich bin <span class="highlight">Thomas Biebl</span></h1>
+                <p class="hero-subtitle">Senior IT-Consultant & Microsoft-Spezialist mit vielfältigen Interessen</p>
+                <div class="hero-buttons">
+                    <a href="#about" class="btn btn-secondary">Mehr über mich</a>
+                    <a href="#contact" class="btn btn-secondary">Kontakt</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-elements">
+                    <div class="floating-item" data-speed="2">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="floating-item" data-speed="3">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <div class="floating-item" data-speed="1.5">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <div class="floating-item" data-speed="2.5">
+                        <i class="fas fa-music"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">Über mich</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-photo">
+                        <img src="assets/thomas-biebl-photo.jpg" alt="Thomas Biebl - Senior IT-Consultant" class="profile-photo">
+                    </div>
+                    <p class="about-intro">
+                        Willkommen auf meiner persönlichen Webseite! Ich bin Thomas Biebl, Senior Consultant bei 
+                        EDV-BV GmbH in Nabburg und Spezialist für Microsoft-Technologien und IT-Lösungen.
+                    </p>
+                    <p>
+                        Mit über 13 Jahren Erfahrung in der IT-Branche unterstütze ich Unternehmen bei der 
+                        Implementierung und Optimierung von Microsoft Cloud- und On-Premise-Lösungen. Meine 
+                        Expertise liegt in der Beratung und Umsetzung moderner IT-Infrastrukturen.
+                    </p>
+                    <p>
+                        Neben meiner beruflichen Tätigkeit als IT-Consultant verbringe ich gerne Zeit mit meinen 
+                        vielfältigen Hobbys, die von Fotografie über Musik bis hin zu Outdoor-Aktivitäten reichen. 
+                        Diese Vielfalt hilft mir, kreativ zu bleiben und neue Perspektiven in meine Arbeit einzubringen.
+                    </p>
+                </div>
+                <div class="about-skills">
+                    <h3>Persönliche Stärken</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Kreativität</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-puzzle-piece"></i>
+                            <span>Problemlösung</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-users"></i>
+                            <span>Teamarbeit</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Zeitmanagement</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Section -->
+    <section id="professional" class="section professional">
+        <div class="container">
+            <h2 class="section-title">Beruflicher Werdegang</h2>
+            <div class="professional-content">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Senior Consultant</h3>
+                            <p class="timeline-period">Dezember 2011 - Heute</p>
+                            <p>EDV-BV GmbH, Nabburg - Implementierung von Microsoft Cloud und On-Premise Lösungen. 
+                            Spezialisierung auf IT-Consulting und moderne Microsoft-Technologien.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Netzwerkadministrator</h3>
+                            <p class="timeline-period">Juli 2007 - November 2011</p>
+                            <p>Crown Gabelstapler GmbH & Co KG - Verantwortlich für die Verwaltung und 
+                            Wartung der IT-Infrastruktur und Netzwerksysteme.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Ausbildung Fachinformatiker</h3>
+                            <p class="timeline-period">2004 - 2007</p>
+                            <p>meiller direct GmbH - Ausbildung zum Fachinformatiker Fachrichtung Systemintegration 
+                            mit Fokus auf IT-Systeme und Netzwerktechnologien.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-stack">
+                    <h3>Technologien & Expertise</h3>
+                    <div class="tech-grid">
+                        <div class="tech-category">
+                            <h4>Microsoft Cloud</h4>
+                            <div class="tech-items">
+                                <span class="tech-item">Microsoft Azure</span>
+                                <span class="tech-item">Office 365</span>
+                                <span class="tech-item">Microsoft Intune</span>
+                                <span class="tech-item">Exchange Online</span>
+                                <span class="tech-item">Skype for Business</span>
+                            </div>
+                        </div>
+                        <div class="tech-category">
+                            <h4>On-Premise Systeme</h4>
+                            <div class="tech-items">
+                                <span class="tech-item">Windows Server</span>
+                                <span class="tech-item">Active Directory</span>
+                                <span class="tech-item">Exchange Server</span>
+                                <span class="tech-item">Windows Clients</span>
+                                <span class="tech-item">Netzwerkadministration</span>
+                            </div>
+                        </div>
+                        <div class="tech-category">
+                            <h4>Tools & Consulting</h4>
+                            <div class="tech-items">
+                                <span class="tech-item">Windows PowerShell</span>
+                                <span class="tech-item">IT-Consulting</span>
+                                <span class="tech-item">Cloud Computing</span>
+                                <span class="tech-item">Systemintegration</span>
+                                <span class="tech-item">Microsoft Technologien</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="section hobbies">
+        <div class="container">
+            <h2 class="section-title">Meine Hobbys</h2>
+            <div class="hobbies-grid">
+                <div class="hobby-card">
+                    <div class="hobby-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Fotografie</h3>
+                    <p>Leidenschaftlicher Hobby-Fotograf mit Fokus auf Landschafts- und Streetfotografie. 
+                    Die Welt durch die Linse zu betrachten inspiriert mich täglich.</p>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-icon">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <h3>Wandern</h3>
+                    <p>Regelmäßige Wandertouren in den Bergen und der Natur helfen mir dabei, 
+                    neue Energie zu tanken und den Kopf freizubekommen.</p>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>Musik</h3>
+                    <p>Musik ist ein wichtiger Teil meines Lebens - sowohl das Hören verschiedener 
+                    Genres als auch das gelegentliche Musizieren mit Freunden.</p>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Lesen</h3>
+                    <p>Ständiges Lernen und Weiterbildung durch Fachliteratur, aber auch 
+                    Entspannung mit guten Romanen und Biografien.</p>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-icon">
+                        <i class="fas fa-bicycle"></i>
+                    </div>
+                    <h3>Radfahren</h3>
+                    <p>Sowohl entspannte Touren durch die Umgebung als auch sportliche 
+                    Herausforderungen auf dem Mountainbike.</p>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Gaming</h3>
+                    <p>Gelegentliches Gaming als Entspannung, mit Vorliebe für strategische 
+                    Spiele und kreative Sandbox-Games.</p>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-icon">
+                        <i class="fab fa-bitcoin"></i>
+                    </div>
+                    <h3>Bitcoin</h3>
+                    <p>Interesse an Kryptowährungen, insbesondere Bitcoin. Beschäftigung mit 
+                    Blockchain-Technologie und der Zukunft digitaler Währungen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Kontakt & Links</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Lassen Sie uns in Verbindung bleiben</h3>
+                    <p>Ich freue mich über neue Kontakte und interessante Gespräche. 
+                    Zögern Sie nicht, mich über eine der folgenden Plattformen zu kontaktieren.</p>
+                </div>
+                <div class="contact-links">
+                    <a href="mailto:thomas@thomasbiebl.de" class="contact-link email">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>E-Mail</h4>
+                            <p>thomas@thomasbiebl.de</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/thomasbiebl" target="_blank" rel="noopener noreferrer" class="contact-link github">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>GitHub</h4>
+                            <p>Meine Projekte und Repositories</p>
+                        </div>
+                    </a>
+                    <a href="https://www.xing.com/profile/Thomas_Biebl" target="_blank" rel="noopener noreferrer" class="contact-link xing">
+                        <div class="contact-icon">
+                            <i class="fab fa-xing"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Xing</h4>
+                            <p>Berufliches Netzwerk</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Thomas Biebl. Alle Rechte vorbehalten.</p>
+                <div class="footer-links">
+                    <a href="#home">Impressum</a>
+                    <a href="#home">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
