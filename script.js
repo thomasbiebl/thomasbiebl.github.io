@@ -175,7 +175,7 @@ function addAnimationStyles() {
         .hobbies-grid .hobby-card:nth-child(4) { transition-delay: 0.4s; }
         .hobbies-grid .hobby-card:nth-child(5) { transition-delay: 0.5s; }
         .hobbies-grid .hobby-card:nth-child(6) { transition-delay: 0.6s; }
-        .hobbies-grid .hobby-card:nth-child(7) { transition-delay: 0.7s; }
+
         
         .skills-grid .skill-item:nth-child(1) { transition-delay: 0.1s; }
         .skills-grid .skill-item:nth-child(2) { transition-delay: 0.2s; }
