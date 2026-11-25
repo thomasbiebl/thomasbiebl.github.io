@@ -44,7 +44,7 @@ Content preferences: Include Bitcoin as a hobby interest.
 ### Content Sections
 - Hero section (home) - IT Consultant focus
 - About section (Über mich) - Updated with accurate professional background
-- Professional section (Beruflich) - Tackle Group GmbH (ehemals EDV-BV GmbH) career timeline
+- Professional section (Beruflich) - Teccle Group GmbH (ehemals EDV-BV GmbH) career timeline
 - Hobbies section (Hobbys) - 7 hobbies including Bitcoin
 - Contact section (Kontakt) - Email, GitHub, Xing links
 
