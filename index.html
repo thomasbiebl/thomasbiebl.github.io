@@ -3,341 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Thomas Biebl - Persönliche Webseite mit beruflichem Hintergrund, Hobbys und Kontaktinformationen">
-    <meta name="keywords" content="Thomas Biebl, Portfolio, Beruflich, Hobbys, Kontakt">
+    <meta name="description" content="Thomas Biebl – Teamleiter Microsoft bei der Teccle Group GmbH. Microsoft Cloud, Azure, Microsoft 365 und On-Premise-Infrastruktur.">
+    <meta name="keywords" content="Thomas Biebl, Teccle Group, Microsoft, Azure, Microsoft 365, Entra ID, Intune, Teamleiter">
     <meta name="author" content="Thomas Biebl">
-    <title>Thomas Biebl - Persönliche Webseite</title>
-    
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Custom CSS -->
+    <meta name="theme-color" content="#0B0F17">
+    <title>Thomas Biebl – Teamleiter Microsoft</title>
+
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <img src="assets/logo.svg" alt="Thomas Biebl Logo" class="logo">
-                <span class="nav-brand">Thomas Biebl</span>
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">Über mich</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#professional" class="nav-link">Beruflich</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#hobbies" class="nav-link">Hobbys</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Kontakt</a>
-                </li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="#top" class="brand">~/thomas-biebl<span class="cursor">_</span></a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menü öffnen">
+                <span></span><span></span><span></span>
+            </button>
+            <nav id="nav" class="nav" aria-label="Hauptnavigation">
+                <a href="#stack" class="nav-link">/stack</a>
+                <a href="#werdegang" class="nav-link">/werdegang</a>
+                <a href="#offline" class="nav-link">/offline</a>
+                <a href="#kontakt" class="nav-link">/kontakt</a>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">Hallo, ich bin <span class="highlight">Thomas Biebl</span></h1>
-                <p class="hero-subtitle">Teamleiter Microsoft & Senior IT-Consultant mit vielfältigen Interessen</p>
-                <div class="hero-buttons">
-                    <a href="#about" class="btn btn-secondary">Mehr über mich</a>
-                    <a href="#contact" class="btn btn-secondary">Kontakt</a>
+    <main id="top">
+        <!-- Hero -->
+        <section class="hero container">
+            <div class="hero-text">
+                <p class="badge"><span class="dot"></span>Teamleiter Microsoft @ Teccle Group GmbH</p>
+                <h1>Thomas Biebl</h1>
+                <p class="lead">Ich führe seit fünf Jahren das Microsoft-Team der Teccle Group GmbH und baue mit Kunden
+                    Cloud- und Hybrid-Umgebungen, die im Alltag einfach laufen.</p>
+                <div class="actions">
+                    <a href="#kontakt" class="btn btn-primary">Kontakt</a>
+                    <a href="https://github.com/thomasbiebl" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">GitHub</a>
                 </div>
             </div>
-            <div class="hero-visual">
-                <div class="floating-elements">
-                    <div class="floating-item" data-speed="2">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <div class="floating-item" data-speed="3">
-                        <i class="fas fa-mountain"></i>
-                    </div>
-                    <div class="floating-item" data-speed="1.5">
-                        <i class="fas fa-running"></i>
-                    </div>
-                    <div class="floating-item" data-speed="2.5">
-                        <i class="fas fa-hand-horns"></i>
-                    </div>
-                    <div class="floating-item bitcoin-float" data-speed="1.8">
-                        <i class="fab fa-bitcoin"></i>
-                    </div>
+            <div class="hero-side">
+                <img src="assets/thomas-biebl-photo-web.jpg" alt="Porträt von Thomas Biebl" class="photo" width="800" height="1200">
+                <div class="terminal" aria-label="Profil als PowerShell-Ausgabe">
+                    <div class="terminal-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+<pre><span class="prompt">PS&gt;</span> Get-Profile thomas.biebl
+
+Rolle       : Teamleiter Microsoft
+Firma       : Teccle Group GmbH
+Teamleitung : seit 2021
+IT seit     : 2004
+Fokus       : Azure, M365, Entra ID</pre>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="section about">
-        <div class="container">
-            <h2 class="section-title">Über mich</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <div class="about-photo">
-                        <img src="assets/thomas-biebl-photo.jpg" alt="Thomas Biebl - Teamleiter Microsoft" class="profile-photo">
-                    </div>
-                    <p class="about-intro">
-                        Willkommen auf meiner persönlichen Webseite! Ich bin Thomas Biebl, Teamleiter des Microsoft-Teams bei 
-                        der Teccle Group GmbH und Spezialist für Microsoft-Technologien und IT-Lösungen.
-                    </p>
-                    <p>
-                        Mit über 20 Jahren Erfahrung in der IT-Branche (seit 2004) unterstütze ich Unternehmen bei der 
-                        Implementierung und Optimierung von Microsoft Cloud- und On-Premise-Lösungen. Meine 
-                        Expertise liegt in der Beratung und Umsetzung moderner IT-Infrastrukturen.
-                    </p>
-                    <p>
-                        Neben meiner beruflichen Tätigkeit als Teamleiter und IT-Consultant verbringe ich gerne Zeit mit meinen 
-                        vielfältigen Hobbys, die von Fotografie über Musik bis hin zu Outdoor-Aktivitäten reichen. 
-                        Diese Vielfalt hilft mir, kreativ zu bleiben und neue Perspektiven in meine Arbeit einzubringen.
-                    </p>
-                </div>
-                <div class="about-skills">
-                    <h3>Persönliche Stärken</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <i class="fas fa-lightbulb"></i>
-                            <span>Kreativität</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-puzzle-piece"></i>
-                            <span>Problemlösung</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-users"></i>
-                            <span>Teamarbeit</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-clock"></i>
-                            <span>Zeitmanagement</span>
-                        </div>
-                    </div>
-                </div>
+        <!-- Stack -->
+        <section id="stack" class="section container">
+            <h2><span class="num">01</span> Stack</h2>
+            <div class="grid cards">
+                <div class="card"><h3>Azure</h3><p>Infrastruktur &amp; Hybrid</p></div>
+                <div class="card"><h3>Microsoft 365</h3><p>Exchange Online, Teams</p></div>
+                <div class="card"><h3>Entra ID &amp; Intune</h3><p>Identität &amp; Geräte</p></div>
+                <div class="card"><h3>Windows Server &amp; AD</h3><p>On-Premise, Exchange Server</p></div>
+                <div class="card"><h3>PowerShell</h3><p>Automatisierung</p></div>
+                <div class="card"><h3>Teamführung</h3><p>Microsoft-Team, Projekte</p></div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Professional Section -->
-    <section id="professional" class="section professional">
-        <div class="container">
-            <h2 class="section-title">Beruflicher Werdegang</h2>
-            <div class="professional-content">
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h3>Teamleiter Microsoft</h3>
-                            <p class="timeline-period">2021 - Heute</p>
-                            <p>Teccle Group GmbH - Leitung des Microsoft-Teams. Verantwortlich für Team, 
-                            Projekte und die Weiterentwicklung von Microsoft Cloud- und On-Premise-Lösungen.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h3>Senior Consultant</h3>
-                            <p class="timeline-period">Dezember 2011 - 2021</p>
-                            <p>EDV-BV GmbH, Nabburg (heute Teil der Teccle Group GmbH) - Implementierung von 
-                            Microsoft Cloud und On-Premise Lösungen. Spezialisierung auf IT-Consulting und 
-                            moderne Microsoft-Technologien.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h3>Netzwerkadministrator</h3>
-                            <p class="timeline-period">Juli 2007 - November 2011</p>
-                            <p>Crown Gabelstapler GmbH & Co KG - Verantwortlich für die Verwaltung und 
-                            Wartung der IT-Infrastruktur und Netzwerksysteme.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h3>Ausbildung Fachinformatiker</h3>
-                            <p class="timeline-period">2004 - 2007</p>
-                            <p>meiller direct GmbH - Ausbildung zum Fachinformatiker Fachrichtung Systemintegration 
-                            mit Fokus auf IT-Systeme und Netzwerktechnologien.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="tech-stack">
-                    <h3>Technologien & Expertise</h3>
-                    <div class="tech-grid">
-                        <div class="tech-category">
-                            <h4>Microsoft Cloud</h4>
-                            <div class="tech-items">
-                                <span class="tech-item">Microsoft Azure</span>
-                                <span class="tech-item">Microsoft 365</span>
-                                <span class="tech-item">Microsoft Intune</span>
-                                <span class="tech-item">Exchange Online</span>
-                                <span class="tech-item">Entra ID</span>
-                            </div>
-                        </div>
-                        <div class="tech-category">
-                            <h4>On-Premise Systeme</h4>
-                            <div class="tech-items">
-                                <span class="tech-item">Windows Server</span>
-                                <span class="tech-item">Active Directory</span>
-                                <span class="tech-item">Exchange Server</span>
-                                <span class="tech-item">Windows Clients</span>
-                                <span class="tech-item">Netzwerkadministration</span>
-                            </div>
-                        </div>
-                        <div class="tech-category">
-                            <h4>Tools & Consulting</h4>
-                            <div class="tech-items">
-                                <span class="tech-item">Windows PowerShell</span>
-                                <span class="tech-item">IT-Consulting</span>
-                                <span class="tech-item">Cloud Computing</span>
-                                <span class="tech-item">Systemintegration</span>
-                                <span class="tech-item">Microsoft Technologien</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <!-- Werdegang -->
+        <section id="werdegang" class="section container">
+            <h2><span class="num">02</span> Werdegang</h2>
+            <ol class="timeline">
+                <li>
+                    <p class="period accent">2021 → heute</p>
+                    <h3>Teamleiter Microsoft · Teccle Group GmbH</h3>
+                    <p>Leitung des Microsoft-Teams. Verantwortlich für Team, Projekte und die Weiterentwicklung
+                        von Microsoft Cloud- und On-Premise-Lösungen.</p>
+                </li>
+                <li>
+                    <p class="period">2011 → 2021</p>
+                    <h3>Senior Consultant · EDV-BV GmbH, Nabburg</h3>
+                    <p>Heute Teil der Teccle Group GmbH. Implementierung von Microsoft Cloud- und On-Premise-Lösungen.</p>
+                </li>
+                <li>
+                    <p class="period">2007 → 2011</p>
+                    <h3>Netzwerkadministrator · Crown Gabelstapler GmbH &amp; Co KG</h3>
+                    <p>Verwaltung und Wartung der IT-Infrastruktur und Netzwerksysteme.</p>
+                </li>
+                <li>
+                    <p class="period">2004 → 2007</p>
+                    <h3>Ausbildung Fachinformatiker · meiller direct GmbH</h3>
+                    <p>Fachrichtung Systemintegration.</p>
+                </li>
+            </ol>
+        </section>
 
-    <!-- Hobbies Section -->
-    <section id="hobbies" class="section hobbies">
-        <div class="container">
-            <h2 class="section-title">Meine Hobbys</h2>
-            <div class="hobbies-grid">
-                <div class="hobby-card">
-                    <div class="hobby-icon">
-                        <i class="fab fa-bitcoin"></i>
-                    </div>
+        <!-- Offline / Hobbys -->
+        <section id="offline" class="section container">
+            <h2><span class="num">03</span> Offline</h2>
+            <div class="grid primary-hobbies">
+                <div class="card card-lg">
+                    <p class="tag">primär</p>
                     <h3>Bitcoin</h3>
-                    <p>Interesse an Kryptowährungen, insbesondere Bitcoin. Beschäftigung mit 
-                    Blockchain-Technologie und der Zukunft digitaler Währungen.</p>
+                    <p>Beschäftigung mit Bitcoin, Blockchain-Technologie und der Zukunft digitaler Währungen.</p>
                 </div>
-                <div class="hobby-card">
-                    <div class="hobby-icon">
-                        <i class="fas fa-camera"></i>
-                    </div>
-                    <h3>Fotografie</h3>
-                    <p>Mit der Kamera unterwegs, vor allem in der Natur und in den Bergen. 
-                    Licht, Perspektive und der richtige Moment machen für mich ein gutes Bild aus.</p>
-                </div>
-                <div class="hobby-card">
-                    <div class="hobby-icon">
-                        <i class="fas fa-mountain"></i>
-                    </div>
-                    <h3>Wandern</h3>
-                    <p>Regelmäßige Wandertouren in den Bergen und der Natur helfen mir dabei, 
-                    neue Energie zu tanken und den Kopf freizubekommen.</p>
-                </div>
-                <div class="hobby-card">
-                    <div class="hobby-icon">
-                        <i class="fas fa-running"></i>
-                    </div>
+                <div class="card card-lg">
+                    <p class="tag">primär</p>
                     <h3>Trailrunning</h3>
-                    <p>Laufen abseits der Straßen durch Wälder und Berge. Die Kombination aus 
-                    Sport und Naturerlebnis ist für mich die perfekte Entspannung.</p>
-                </div>
-                <div class="hobby-card">
-                    <div class="hobby-icon">
-                        <i class="fas fa-music"></i>
-                    </div>
-                    <h3>Musik</h3>
-                    <p>Großer Rock-Fan mit Vorliebe für klassische und moderne Rock-Musik. 
-                    Konzerte und das Entdecken neuer Bands gehören zu meinen Leidenschaften.</p>
-                </div>
-                <div class="hobby-card">
-                    <div class="hobby-icon">
-                        <i class="fas fa-book"></i>
-                    </div>
-                    <h3>Lesen</h3>
-                    <p>Ständiges Lernen und Weiterbildung durch Fachliteratur, aber auch 
-                    Entspannung mit guten Romanen und Biografien.</p>
-                </div>
-                <div class="hobby-card">
-                    <div class="hobby-icon">
-                        <i class="fas fa-seedling"></i>
-                    </div>
-                    <h3>Imkern</h3>
-                    <p>Faszination für die Welt der Bienen und die Herstellung von eigenem Honig. 
-                    Ein ruhiges Hobby, das Geduld und Naturverbundenheit fördert.</p>
+                    <p>Laufen abseits der Straßen durch Wälder und Berge – Sport und Natur in einem.</p>
                 </div>
             </div>
-        </div>
-    </section>
+            <ul class="hobby-list">
+                <li>wandern</li>
+                <li>imkern</li>
+                <li>rockmusik</li>
+                <li>lesen</li>
+            </ul>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section contact">
-        <div class="container">
-            <h2 class="section-title">Kontakt & Links</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Lassen Sie uns in Verbindung bleiben</h3>
-                    <p>Ich freue mich über neue Kontakte und interessante Gespräche. 
-                    Zögern Sie nicht, mich über eine der folgenden Plattformen zu kontaktieren.</p>
+        <!-- Kontakt -->
+        <section id="kontakt" class="section container">
+            <div class="contact-box">
+                <div>
+                    <h2>Projekt im Kopf?</h2>
+                    <a href="mailto:mail@thomasbiebl.de" class="mail">mail@thomasbiebl.de</a>
                 </div>
-                <div class="contact-links">
-                    <a href="mailto:mail@thomasbiebl.de" class="contact-link email">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>E-Mail</h4>
-                            <p>mail@thomasbiebl.de</p>
-                        </div>
-                    </a>
-                    <a href="https://github.com/thomasbiebl" target="_blank" rel="noopener noreferrer" class="contact-link github">
-                        <div class="contact-icon">
-                            <i class="fab fa-github"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>GitHub</h4>
-                            <p>Meine Projekte und Repositories</p>
-                        </div>
-                    </a>
-                    <a href="https://www.xing.com/profile/Thomas_Biebl" target="_blank" rel="noopener noreferrer" class="contact-link xing">
-                        <div class="contact-icon">
-                            <i class="fab fa-xing"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Xing</h4>
-                            <p>Berufliches Netzwerk</p>
-                        </div>
-                    </a>
+                <div class="actions">
+                    <a href="https://www.xing.com/profile/Thomas_Biebl" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">Xing</a>
+                    <a href="https://github.com/thomasbiebl" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">GitHub</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2026 Thomas Biebl. Alle Rechte vorbehalten.</p>
-                <div class="footer-links">
-                    <a href="#home">Impressum</a>
-                    <a href="#home">Datenschutz</a>
-                </div>
-            </div>
-        </div>
+    <footer class="container footer">
+        <p>© <span id="year">2026</span> Thomas Biebl · <a href="#top">Impressum</a> · <a href="#top">Datenschutz</a></p>
     </footer>
 
-    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
