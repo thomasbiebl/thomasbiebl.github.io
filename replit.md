@@ -7,8 +7,8 @@ This is a personal portfolio website for Thomas Biebl, built as a static single-
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
-Design preferences: Black/white color scheme with Bitcoin orange (#F7931A) accent color.
-Content preferences: Include Bitcoin as a hobby interest.
+Design preferences: Dark tech theme (navy #0B0F17) with sky blue (#38BDF8) accent, monospace details, own portrait photo.
+Content preferences: Bitcoin and Trailrunning are the primary hobbies; photography is not listed.
 
 ## System Architecture
 
@@ -22,8 +22,7 @@ Content preferences: Include Bitcoin as a hobby interest.
 - **HTML5**: Semantic markup with proper meta tags for SEO
 - **CSS3**: Modern CSS with custom properties (CSS variables) for theming
 - **Vanilla JavaScript**: No framework dependencies, pure DOM manipulation
-- **Google Fonts**: Inter font family for typography
-- **Font Awesome**: Icon library for visual elements
+- **Google Fonts**: Space Grotesk (text) and JetBrains Mono (accents)
 
 ## Key Components
 
@@ -35,17 +34,17 @@ Content preferences: Include Bitcoin as a hobby interest.
 
 ### Visual Design System
 - CSS custom properties for consistent theming
-- Black/white color palette with Bitcoin orange (#F7931A) accents
-- Minimalist design with high contrast
-- Box shadows and border radius for modern card-based design
+- Dark navy palette with sky blue (#38BDF8) accents, defined as CSS variables in style.css
+- Terminal/PowerShell-style hero card next to the portrait photo (assets/thomas-biebl-photo-web.jpg)
+- Bordered cards on a dark surface
 - Responsive breakpoints for mobile, tablet, and desktop
-- Bitcoin orange used for links, highlights, and interactive elements
+- Accent used for links, highlights, and interactive elements
 
 ### Content Sections
 - Hero section (home) - IT Consultant focus
 - About section (Über mich) - Updated with accurate professional background
-- Professional section (Beruflich) - EDV-BV GmbH career timeline
-- Hobbies section (Hobbys) - 7 hobbies including Bitcoin
+- Professional section (Beruflich) - Teccle Group GmbH (ehemals EDV-BV GmbH) career timeline
+- Offline section (Hobbys) - Bitcoin and Trailrunning as primary hobbies, plus Wandern, Imkern, Rockmusik, Lesen
 - Contact section (Kontakt) - Email, GitHub, Xing links
 
 ### Interactive Features
@@ -74,8 +73,7 @@ Content preferences: Include Bitcoin as a hobby interest.
 ## External Dependencies
 
 ### CDN Resources
-- **Google Fonts**: Inter font family (weights 300-700)
-- **Font Awesome 6.4.0**: Icon library via CDN
+- **Google Fonts**: Space Grotesk and JetBrains Mono
 - **http-server**: Development server for local testing
 
 ### Development Tools
